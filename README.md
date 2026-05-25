@@ -1,4 +1,20 @@
-# Long-Term Time Series Forecasting
+<div align="center">
+
+# UNIVERSIDAD DE GUAYAQUIL
+
+### FACULTAD DE CIENCIAS MATEMÁTICAS Y FÍSICAS
+
+*Carrera de Ingeniería en Ciencia de Datos e Inteligencia Artificial*
+
+<br>
+
+**APRENDIZAJE PROFUNDO Y REFORZADO**
+
+## Long-Term Time Series Forecasting (LTSF)
+
+### *Análisis comparativo de modelos LTSF y Redes LSTM utilizando el Dataset ETTh1*
+
+</div>
 
 El objetivo del proyecto es evaluar métodos de pronóstico de series temporales a largo plazo (LTSF). En particular, se compara la literatura reciente sobre modelos lineales simples propuestos en "Are Transformers Effective for Time Series Forecasting?" (Zeng et al., 2022) contra una implementación de una red LSTM entrenada sobre el dataset ETTh1 para predecir la temperatura del aceite (`OT`).
 
@@ -11,7 +27,6 @@ El notebook `LTSF.ipynb` contiene el análisis exploratorio, las funciones de pr
 - Magno Barco ([Rask78](https://github.com/Rask78))
 - Marlon Salazar ([marlonSalazar12345](https://github.com/marlonSalazar12345))
 - Paul Delgado ([PaulDelgado07](https://github.com/PaulDelgado07))
-
 
 ## Arquitectura del modelo
 Este repositorio implementa una red neuronal recurrente Long Short-Term Memory (LSTM) robusta y multicapa utilizando PyTorch, diseñada específicamente para el modelado de secuencias y la predicción de series temporales.
@@ -92,3 +107,10 @@ pip install -r requirements.txt
 ## Uso
 - Abrir y ejecutar `LTSF.ipynb` en Jupyter Notebook, JupyterLab o VS Code.
 - El código de entrenamiento mueve explícitamente tensores y modelo a CUDA (`.cuda()`), por lo que se recomienda disponer de GPU para entrenamientos completos. En entornos sin GPU será necesario editar las llamadas a `.cuda()` para usar CPU.
+
+## Conclusiones
+- Los experimentos realizados sobre el dataset ETTh1 demuestran que una arquitectura LSTM correctamente regularizada puede superar significativamente a los modelos lineales propuestos en la literatura reciente de LTSF para tareas multivariadas a univariadas. 
+
+- La incorporación de codificación temporal cíclica mediante funciones seno y coseno permitió capturar patrones estacionales diarios y semanales de forma más eficiente, mejorando la estabilidad predictiva del modelo.
+
+- Aunque el error aumenta conforme se extiende el horizonte de predicción ($H=96 \rightarrow H=336$), la LSTM mantuvo un desempeño robusto y consistente, validando su capacidad para modelar dependencias temporales complejas en escenarios reales de pronóstico energético.
