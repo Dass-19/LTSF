@@ -5,12 +5,12 @@ El objetivo del proyecto es evaluar métodos de pronóstico de series temporales
 El notebook `LTSF.ipynb` contiene el análisis exploratorio, las funciones de preprocesamiento, la implementación de una LSTM en PyTorch y la evaluación con métricas estándar (MSE, MAE). Los experimentos incluyen horizontes de predicción H = 96 y H = 336.
 
 ## Autores
-- [Allison Castro](https://github.com/allisoncastro150-spec)
-- [Daniel Suárez](https://github.com/Dass-19)
-- [Joselyn Ortega](https://github.com/JoselynOrtegaV)
-- [Magno Barco](https://github.com/Rask78)
-- [Marlon Salazar](https://github.com/marlonSalazar12345)
-- [Paul Delgado](https://github.com/PaulDelgado07)
+- Allison Castro ([allisoncastro150-spec](https://github.com/allisoncastro150-spec))
+- Daniel Suárez ([Dass-19](https://github.com/Dass-19))
+- Joselyn Ortega ([JoselynOrtegaV](https://github.com/JoselynOrtegaV))
+- Magno Barco ([Rask78](https://github.com/Rask78))
+- Marlon Salazar ([marlonSalazar12345](https://github.com/marlonSalazar12345))
+- Paul Delgado ([PaulDelgado07](https://github.com/PaulDelgado07))
 
 
 ## Arquitectura del modelo
@@ -72,7 +72,7 @@ Este repositorio implementa una red neuronal recurrente Long Short-Term Memory (
 1. Clonar el repositorio:
 
 ```powershell
-git clone <tu-repo-url>
+git clone https://github.com/Dass-19/LTSF.git
 cd LTSF
 ```
 
