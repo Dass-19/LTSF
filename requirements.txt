@@ -1,6 +1,12 @@
+# Manipulación y cálculo numérico
 pandas
-matplotlib
 numpy
-statsmodels
-torch
+
+# Visualización de datos
+matplotlib
+seaborn
+
+# Modelado (Machine Learning, Deep Learning y Estadística)
 scikit-learn
+torch
+statsmodels
